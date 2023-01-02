@@ -100,14 +100,14 @@
 
 *
 {
-    padding: 0;
-    margin: 0;
+    padding: 10;
+    margin: 100;
     box-sizing: border-box;
 
 }
 .menu-bar {
-        background: rgb(4, 116, 196);
-        text-align: center;
+        background: rgb(1, 159, 164);
+        text-align: left;
       
 }
 
@@ -120,22 +120,23 @@
 }
 .menu-bar ul li
 {
-            width: 120px;
-            margin:10px;
+            width: 150px;
+            margin:8px;
             padding: 10px;
+            display: flow-root;
 
 }    
 
 .menu-bar ul li a
 {
-    color: white;
-    text-decoration: none   ;
+    color: rgb(255, 255, 255);
+    text-decoration: dotted   ;
     font-size: large;
-    font-style: inherit;
+    font-style: initial;
 }
 .active, .menu-bar ul li:hover
 {
-    background: #2bab0d;
+    background: rgb(1, 159, 164);
     border-radius:3px ;
 
 }
@@ -173,7 +174,7 @@
     margin: 10px;
     position: absolute;
     right: -130px;
-    background-color:  rgb(4, 116, 196);
+    background-color:  rgb(1, 159, 164);
 
 }
 .menu-bar ul li:hover .sub-menu-1 ul li
@@ -198,5 +199,39 @@
 .img1{
       width: 100%;
       height: auto;
+
+}
+
+
+.sub-menu-2
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-2
+{
+    display: block;
+    position: absolute;
+      background: rgb(0, green, 0);
+}
+
+.menu-bar ul li:hover .sub-menu-2 ul
+{
+    display: block;
+    margin: 5px;
+    position: absolute;
+    right: -130px;
+    background-color:  rgb(1, 159, 164);
+
+}
+.menu-bar ul li:hover .sub-menu-2 ul li
+{
+    width: 100px;
+    padding: 5px;
+    left: 100px;
+    
+}
+.menu-bar ul li:hover .sub-menu-2 ul li:hover
+{
+    background-color: coral;
 
 }
